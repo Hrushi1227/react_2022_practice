@@ -5,10 +5,10 @@ const UseHooksEffects = () => {
   const [b, setB] = useState(0);
 
   useEffect(() => {
-    console.log("Hello ");
+    console.log("Hello A");
   }, [a]);
   useEffect(() => {
-    console.log("Hello ");
+    console.log("Hello B");
   }, [b]);
   return (
     <>

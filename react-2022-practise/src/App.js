@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/header/Header";
 import { Footer } from "./components/footer/Footer";
 import UseHookEffectIs from "./components/useHookEffect/UseHooksEffects";
+import UseRefEffect from "./components/useHookEffect/UseRefEffect";
 // import Main from "./components/main/Main";
 // import { Navbar } from "./components/NavBar/Navbar";
 // import Carousel from "./components/carousel/Carousel";
@@ -20,7 +21,8 @@ const App = () => {
   return (
     <React.Fragment>
       <Header />
-      <UseHookEffectIs></UseHookEffectIs>
+      <UseRefEffect />
+      {/* <UseHookEffectIs /> */}
       {/* <LifeCycleOfReact name={"Rushikesh"}></LifeCycleOfReact>
       <UpdatingLifeCycle></UpdatingLifeCycle> */}
       {/* <Navbar />
