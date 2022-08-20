@@ -2,16 +2,33 @@ import React, { useState, useEffect } from "react";
 
 const UseHooksEffects = () => {
   const [a, setA] = useState(0);
-  const changeValue = () => {
-    setA(a + 1);
-  };
+  const [b, setB] = useState(0);
+
   useEffect(() => {
     console.log("Hello ");
   }, [a]);
+  useEffect(() => {
+    console.log("Hello ");
+  }, [b]);
   return (
     <>
       <h2>Value of A is {a}</h2>
-      <button onClick={changeValue}>Click Me to Increment</button>
+      <h2>Value of B is {b}</h2>
+      <button
+        onClick={() => {
+          setA(a + 1);
+        }}
+      >
+        Click Me to Increment
+      </button>
+
+      <button
+        onClick={() => {
+          setB(b + 5);
+        }}
+      >
+        Click Me to Increment
+      </button>
     </>
   );
 };
